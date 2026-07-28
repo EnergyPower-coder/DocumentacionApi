@@ -1,0 +1,43 @@
+# ==========================================
+# Archivos de Entorno y Credenciales (¡SÚPER IMPORTANTE!)
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+
+# ==========================================
+# Sistema Operativo y Editores de Código
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Code / Editores
+.vscode/
+.idea/
+*.suo
+*.user
+
+# ==========================================
+# Node.js / Dependencias (si usas npm a futuro)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# Temporales y Logs
+# ==========================================
+*.log
+*.tmp
+*.swp
