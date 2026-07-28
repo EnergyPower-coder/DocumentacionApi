@@ -1,0 +1,3 @@
+### Obtener items de Fracttal
+GET http://api.energy.keops-corp.com/toReceive_equipo/?limit=10000&page=1
+Authorization: Basic Streamline E$$$2024y

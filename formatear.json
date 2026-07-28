@@ -1,0 +1,33 @@
+{
+    "metodo": "unbilled",
+    "respuesta": 200,
+    "descripcion": "Consulta exitosa. Egresos sin facturar.",
+    "datos": {
+        "identificacion_consultada": "'1234567'",
+        "fecha_corte": "2026-07-28",
+        "egresos": [
+            {
+                "fecha": "2026-03-21",
+                "nota_entrega": "01151112",
+                "bodega": "01",
+                "costo_t": "10.16",
+                "total_neto": "13.81",
+                "facturado": false,
+                "total_iva": "2.07",
+                "tipo_orden": "EOC",
+                "orden_tp": "43833-001"
+            },
+            {
+                "fecha": "2026-03-26",
+                "nota_entrega": "01151201",
+                "bodega": "01",
+                "costo_t": "117.33",
+                "total_neto": "170.78",
+                "facturado": false,
+                "total_iva": "25.62",
+                "tipo_orden": "EOC",
+                "orden_tp": "42835-001"
+            }
+        ]
+    }
+}

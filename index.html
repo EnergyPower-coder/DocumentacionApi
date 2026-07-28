@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentación API | Fracctal Style</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Parser de Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <div class="layout">
+    <!-- Menú Lateral Estilo Fracctal -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo-icon">⚡</span>
+        <h2>API Docs</h2>
+      </div>
+
+      <!-- Buscador de Endpoints -->
+      <div class="search-box">
+        <input type="text" id="busqueda" placeholder="Buscar endpoint..." onkeyup="filtrarMenu()">
+      </div>
+
+      <nav class="nav-menu">
+        <ul id="menu">
+          <!-- Se genera dinámicamente con JS -->
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Área Principal -->
+    <main class="content">
+      <div class="top-bar">
+        <span id="doc-breadcrumb">Documentación / Cargando...</span>
+      </div>
+      <article id="documento-content" class="markdown-body">
+        Cargando información...
+      </article>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
