@@ -10,11 +10,14 @@
 <body>
 
   <div class="layout">
-    <!-- Menú Lateral Estilo Fracctal -->
-    <aside class="sidebar">
+    <!-- Menú Lateral Estilo Fracctal colapsado por defecto -->
+    <aside class="sidebar collapsed" id="sidebar">
       <div class="brand">
         <span class="logo-icon">⚡</span>
-        <h2>API Docs</h2>
+        <h2 class="brand-title">API Docs</h2>
+        <button id="toggle-sidebar" class="toggle-sidebar-btn" title="Desplegar/Contraer menú">
+          ▶
+        </button>
       </div>
 
       <!-- Buscador de Endpoints -->

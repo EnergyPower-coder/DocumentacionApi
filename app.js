@@ -1,104 +1,229 @@
-// Agrupa tus endpoints por Proyectos o Módulos (Colecciones)
+// Agrupa tus endpoints por Proyectos > Subcarpetas > Endpoints
 const colecciones = [
   {
     nombreProyecto: "KEOPS",
-    endpoints: [
-      { titulo: "Lista de articulos pendientes", metodo: "GET", archivo: "KEOPS/01-lista-articulos-pendientes.md" },
-      { titulo: "Lista de articulos pendientes equipo", metodo: "GET", archivo: "KEOPS/01-lista-articulos-pendientes-equipo.md" },
-      { titulo: "Lista de articulos", metodo: "GET", archivo: "KEOPS/02-lista-articulos.md" },
-      { titulo: "Lista de articulos equipo", metodo: "GET", archivo: "KEOPS/02-lista-articulos-equipo.md" },
-      { titulo: "Lista de transacciones", metodo: "GET", archivo: "KEOPS/03-lista-transacciones.md" },
-      { titulo: "Lista de transacciones equipo", metodo: "GET", archivo: "KEOPS/03-lista-transacciones-equipo.md" },
-      { titulo: "Gastos viaticos", metodo: "GET", archivo: "KEOPS/04-gastos-viaticos.md" },
-      { titulo: "Lista de coincidencia productos Cifrado", metodo: "GET", archivo: "KEOPS/05-lista-coincidencia-producto.md" },
-      { titulo: "Ventas Netas", metodo: "GET", archivo: "KEOPS/06-ventas-netas.md" },
-      { titulo: "Ventas EP", metodo: "GET", archivo: "KEOPS/06-ventas-EP.md" },
-      { titulo: "Items General", metodo: "GET", archivo: "KEOPS/07-items-fracttal.md" },
-      { titulo: "Lista de productos por nombre | AURA", metodo: "GET", archivo: "KEOPS/08-lista-productos-nombre.md" },
-      { titulo: "Lista de productos por codArticulo | AURA", metodo: "GET", archivo: "KEOPS/08-lista-productos-codigoArticulo.md" },
-      { titulo: "Producto por codArticulo | AURA", metodo: "GET", archivo: "KEOPS/09-producto-codigoArticulo.md" },
-      { titulo: "Calificación del cliente | AURA", metodo: "GET", archivo: "KEOPS/10-calificacion-cliente.md" },
-      { titulo: "Consultar activo | AURA", metodo: "GET", archivo: "KEOPS/11-consultar-activo.md" },
-      { titulo: "Ultimas ventas | AURA", metodo: "GET", archivo: "KEOPS/12-ultimas-ventas.md" },
-      { titulo: "Estado financiero | AURA", metodo: "GET", archivo: "KEOPS/12-estado-financiero.md" },
-      { titulo: "Pendientes por facturar | AURA", metodo: "GET", archivo: "KEOPS/13-pendientes-facturar.md" }
-    ]
+    subcarpetas: [
+      {
+        nombreSubcarpeta: "Artículos e Inventario",
+        endpoints: [
+          {
+            titulo: "Lista de coincidencia productos Cifrado",
+            metodo: "GET",
+            archivo: "KEOPS/05-lista-coincidencia-producto.md",
+          },
+          {
+            titulo: "Lista de articulos pendientes",
+            metodo: "GET",
+            archivo: "KEOPS/01-lista-articulos-pendientes.md",
+          },
+          {
+            titulo: "Lista de articulos pendientes equipo",
+            metodo: "GET",
+            archivo: "KEOPS/01-lista-articulos-pendientes-equipo.md",
+          },
+          {
+            titulo: "Lista de articulos",
+            metodo: "GET",
+            archivo: "KEOPS/02-lista-articulos.md",
+          },
+          {
+            titulo: "Lista de articulos equipo",
+            metodo: "GET",
+            archivo: "KEOPS/02-lista-articulos-equipo.md",
+          },
+          {
+            titulo: "Items General",
+            metodo: "GET",
+            archivo: "KEOPS/07-items-fracttal.md",
+          },
+        ],
+      },
+      {
+        nombreSubcarpeta: "Transacciones y Finanzas",
+        endpoints: [
+          {
+            titulo: "Lista de transacciones",
+            metodo: "GET",
+            archivo: "KEOPS/03-lista-transacciones.md",
+          },
+          {
+            titulo: "Lista de transacciones equipo",
+            metodo: "GET",
+            archivo: "KEOPS/03-lista-transacciones-equipo.md",
+          },
+          {
+            titulo: "Gastos viaticos",
+            metodo: "GET",
+            archivo: "KEOPS/04-gastos-viaticos.md",
+          },
+          {
+            titulo: "Ventas Netas",
+            metodo: "GET",
+            archivo: "KEOPS/06-ventas-netas.md",
+          },
+          {
+            titulo: "Ventas EP",
+            metodo: "GET",
+            archivo: "KEOPS/06-ventas-EP.md",
+          },
+        ],
+      },
+      {
+        nombreSubcarpeta: "Módulo AURA",
+        endpoints: [
+          
+          {
+            titulo: "Lista de productos por nombre",
+            metodo: "GET",
+            archivo: "KEOPS/08-lista-productos-nombre.md",
+          },
+          {
+            titulo: "Lista de productos por codArticulo",
+            metodo: "GET",
+            archivo: "KEOPS/08-lista-productos-codigoArticulo.md",
+          },
+          {
+            titulo: "Producto por codArticulo",
+            metodo: "GET",
+            archivo: "KEOPS/09-producto-codigoArticulo.md",
+          },
+          {
+            titulo: "Calificación del cliente",
+            metodo: "GET",
+            archivo: "KEOPS/10-calificacion-cliente.md",
+          },
+          {
+            titulo: "Consultar activo",
+            metodo: "GET",
+            archivo: "KEOPS/11-consultar-activo.md",
+          },
+          {
+            titulo: "Ultimas ventas",
+            metodo: "GET",
+            archivo: "KEOPS/12-ultimas-ventas.md",
+          },
+          {
+            titulo: "Estado financiero",
+            metodo: "GET",
+            archivo: "KEOPS/12-estado-financiero.md",
+          },
+          {
+            titulo: "Pendientes por facturar",
+            metodo: "GET",
+            archivo: "KEOPS/13-pendientes-facturar.md",
+          },
+        ],
+      },
+    ],
   },
-  {
-    nombreProyecto: "Módulo de Inventario",
-    endpoints: [
-      { titulo: "Listar Productos", metodo: "GET", archivo: "05-productos-get.md" }
-    ]
-  }
 ];
 
+// Elementos del DOM
 const menuUl = document.getElementById("menu");
 const visorContent = document.getElementById("documento-content");
 const breadcrumb = document.getElementById("doc-breadcrumb");
+const sidebar = document.getElementById("sidebar");
+const btnToggleSidebar = document.getElementById("toggle-sidebar");
 
-// Cargar el archivo Markdown
-async function cargarMarkdown(item, elementoEnlace, nombreModulo) {
+// Cargar Markdown
+async function cargarMarkdown(item, elementoEnlace, rutaBreadcrumb) {
   try {
     const res = await fetch(item.archivo);
     if (!res.ok) throw new Error();
     const markdownText = await res.text();
 
     visorContent.innerHTML = marked.parse(markdownText);
-    breadcrumb.textContent = `${nombreModulo} / ${item.titulo}`;
+    breadcrumb.textContent = `${rutaBreadcrumb} / ${item.titulo}`;
 
-    document.querySelectorAll(".menu-item").forEach(el => el.classList.remove("active"));
+    document
+      .querySelectorAll(".menu-item")
+      .forEach((el) => el.classList.remove("active"));
     if (elementoEnlace) elementoEnlace.classList.add("active");
-
   } catch (error) {
     visorContent.innerHTML = `
       <h2 style="color: #ef4444;">Error al cargar el archivo</h2>
-      <p>Asegúrate de estar usando <b>Live Server</b> y de que el archivo <code>${item.archivo}</code> exista.</p>
+      <p>Asegúrate de que el archivo <code>${item.archivo}</code> exista localmente.</p>
     `;
   }
 }
 
-// Renderizar el Menú con Desplegables
-colecciones.forEach((coleccion, i) => {
+// Renderizar Menú Dinámico
+let primerElementoCargado = false;
+
+colecciones.forEach((coleccion) => {
   const liGrupo = document.createElement("li");
   liGrupo.className = "folder-group";
 
-  // Botón del Desplegable (Título de la Colección)
+  // Nivel 1: Proyecto (Inician colapsados con 'closed')
   const btnFolder = document.createElement("button");
-  btnFolder.className = "folder-btn";
+  btnFolder.className = "folder-btn closed";
   btnFolder.innerHTML = `
     <span>📁 ${coleccion.nombreProyecto}</span>
     <span class="arrow">▼</span>
   `;
 
-  // Submenú con los endpoints
+  // Ocultamos el submenú de nivel 1 con 'hidden'
   const ulSubmenu = document.createElement("ul");
-  ulSubmenu.className = "submenu";
+  ulSubmenu.className = "submenu hidden";
 
-  coleccion.endpoints.forEach((item, j) => {
-    const liSub = document.createElement("li");
-    const a = document.createElement("a");
-    a.className = "menu-item";
-    a.href = "#";
-    a.innerHTML = `
-      <span class="badge ${item.metodo.toLowerCase()}">${item.metodo}</span>
-      <span>${item.titulo}</span>
+  // Nivel 2: Subcarpetas
+  coleccion.subcarpetas.forEach((subcarpeta) => {
+    const liSubfolder = document.createElement("li");
+    liSubfolder.className = "subfolder-group";
+
+    // Subcarpetas inician colapsadas con 'closed'
+    const btnSubfolder = document.createElement("button");
+    btnSubfolder.className = "subfolder-btn closed";
+    btnSubfolder.innerHTML = `
+      <span>📂 ${subcarpeta.nombreSubcarpeta}</span>
+      <span class="arrow">▼</span>
     `;
 
-    a.addEventListener("click", (e) => {
-      e.preventDefault();
-      cargarMarkdown(item, a, coleccion.nombreProyecto);
+    // Ocultamos el submenú de endpoints con 'hidden'
+    const ulSubmenuEndpoints = document.createElement("ul");
+    ulSubmenuEndpoints.className = "submenu-endpoints hidden";
+
+    // Nivel 3: Endpoints
+    subcarpeta.endpoints.forEach((item) => {
+      const liEndpoint = document.createElement("li");
+      const a = document.createElement("a");
+      a.className = "menu-item";
+      a.href = "#";
+      a.innerHTML = `
+        <span class="badge ${item.metodo.toLowerCase()}">${item.metodo}</span>
+        <span>${item.titulo}</span>
+      `;
+
+      const rutaBreadcrumb = `${coleccion.nombreProyecto} / ${subcarpeta.nombreSubcarpeta}`;
+
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        cargarMarkdown(item, a, rutaBreadcrumb);
+      });
+
+      liEndpoint.appendChild(a);
+      ulSubmenuEndpoints.appendChild(liEndpoint);
+
+      // Carga en segundo plano el primer documento disponible al iniciar la app
+      if (!primerElementoCargado) {
+        cargarMarkdown(item, a, rutaBreadcrumb);
+        primerElementoCargado = true;
+      }
     });
 
-    liSub.appendChild(a);
-    ulSubmenu.appendChild(liSub);
+    // Abrir / Cerrar Subcarpeta
+    btnSubfolder.addEventListener("click", (e) => {
+      e.stopPropagation();
+      btnSubfolder.classList.toggle("closed");
+      ulSubmenuEndpoints.classList.toggle("hidden");
+    });
 
-    // Cargar el primer elemento de la primera colección por defecto
-    if (i === 0 && j === 0) {
-      cargarMarkdown(item, a, coleccion.nombreProyecto);
-    }
+    liSubfolder.appendChild(btnSubfolder);
+    liSubfolder.appendChild(ulSubmenuEndpoints);
+    ulSubmenu.appendChild(liSubfolder);
   });
 
-  // Evento para abrir/cerrar el desplegable
+  // Abrir / Cerrar Proyecto
   btnFolder.addEventListener("click", () => {
     btnFolder.classList.toggle("closed");
     ulSubmenu.classList.toggle("hidden");
@@ -109,14 +234,22 @@ colecciones.forEach((coleccion, i) => {
   menuUl.appendChild(liGrupo);
 });
 
-// Buscador General
+// Buscador
 function filtrarMenu() {
   const query = document.getElementById("busqueda").value.toLowerCase();
   const items = document.querySelectorAll("#menu .menu-item");
 
-  items.forEach(a => {
+  items.forEach((a) => {
     const texto = a.textContent.toLowerCase();
     const li = a.parentElement;
     li.style.display = texto.includes(query) ? "block" : "none";
+  });
+}
+
+// Abrir / Colapsar la barra lateral completa
+if (btnToggleSidebar && sidebar) {
+  btnToggleSidebar.addEventListener("click", () => {
+    const isCollapsed = sidebar.classList.toggle("collapsed");
+    btnToggleSidebar.textContent = isCollapsed ? "▶" : "◀";
   });
 }

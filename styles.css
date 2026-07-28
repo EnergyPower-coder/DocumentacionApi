@@ -11,17 +11,46 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #2c
   display: flex;
   flex-direction: column;
   border-right: 1px solid #334155;
+  transition: width 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estado Colapsado */
+.sidebar.collapsed {
+  width: 60px;
 }
 
 .brand {
-  padding: 20px;
+  padding: 15px 20px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
   border-bottom: 1px solid #334155;
+  min-height: 60px;
 }
-.brand h2 { font-size: 1.1rem; font-weight: 600; color: #fff; }
+.brand-title { font-size: 1.1rem; font-weight: 600; color: #fff; white-space: nowrap; }
 .logo-icon { font-size: 1.3rem; }
+
+/* Botón de Toggle Sidebar (Siempre visible) */
+.toggle-sidebar-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition: color 0.2s ease, transform 0.3s ease;
+}
+.toggle-sidebar-btn:hover { color: #ffffff; }
+
+/* Ocultar textos cuando la barra lateral está colapsada */
+.sidebar.collapsed .brand-title,
+.sidebar.collapsed .search-box,
+.sidebar.collapsed .nav-menu {
+  display: none;
+}
 
 .search-box { padding: 15px; }
 .search-box input {
@@ -42,8 +71,8 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #2c
 
 .folder-group { margin-bottom: 6px; }
 
-/* Botón del Desplegable (Módulos) */
-.folder-btn {
+/* Botones de carpetas y subcarpetas */
+.folder-btn, .subfolder-btn {
   width: 100%;
   background: transparent;
   border: none;
@@ -61,17 +90,26 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #2c
   transition: all 0.2s;
 }
 
-.folder-btn:hover { color: #fff; background: #334155; }
-.folder-btn .arrow { font-size: 0.65rem; transition: transform 0.2s ease; }
-.folder-btn.closed .arrow { transform: rotate(-90deg); }
+.subfolder-btn {
+  color: #cbd5e1;
+  text-transform: none;
+  font-weight: 600;
+  padding-left: 15px;
+}
 
-/* Submenú de Endpoints */
-.submenu {
+.folder-btn:hover, .subfolder-btn:hover { color: #fff; background: #334155; }
+.folder-btn .arrow, .subfolder-btn .arrow { font-size: 0.65rem; transition: transform 0.2s ease; }
+
+/* Rotación de flechas al colapsar carpetas */
+.folder-btn.closed .arrow, .subfolder-btn.closed .arrow { transform: rotate(-90deg); }
+
+/* Submenús acordonados */
+.submenu, .submenu-endpoints {
   list-style: none;
-  padding-left: 6px;
+  padding-left: 10px;
   margin-top: 2px;
 }
-.submenu.hidden { display: none; }
+.submenu.hidden, .submenu-endpoints.hidden { display: none; }
 
 .menu-item {
   display: flex;
