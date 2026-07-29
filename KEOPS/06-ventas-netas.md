@@ -13,7 +13,7 @@ Retorna el listado de ventas netas registradas en el sistema para un rango de fe
 | Parámetro | Tipo | Requerido | Descripción | Ejemplo |
 | --- | --- | --- | --- | --- |
 | `codemp` | string | ✅ Sí | Código de la empresa | `01` |
-| `clave` | string | ✅ Sí | Clave de acceso a la API | `claveUnico` |
+| `clave` | string | ✅ Sí | Clave de acceso a la API ubicado en el archivo **API CLAVE 4**| `claveUnico` |
 | `fecini` | string | ✅ Sí | Fecha de inicio del rango de consulta (`YYYY-MM-DD`) | `2024-12-31` |
 | `fecfin` | string | ✅ Sí | Fecha de fin del rango de consulta (`YYYY-MM-DD`) | `2024-12-31` |
 

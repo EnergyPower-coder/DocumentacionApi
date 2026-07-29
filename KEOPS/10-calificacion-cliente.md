@@ -17,7 +17,7 @@ Consulta la calificación VIP, los datos de contacto y la información comercial
 | Parámetro | Tipo | Requerido | Descripción | Ejemplo |
 | --- | --- | --- | --- | --- |
 | `codemp` | texto (*string*) | Sí | Código identificador de la empresa. | `01` |
-| `clave` | texto (*string*) | Sí | Clave de acceso / token de autenticación para la API. | `clave` |
+| `clave` | texto (*string*) | Sí | Clave de acceso ubicado en el archivo **API CLAVE 1**. | `clave` |
 | `identificacion` | texto (*string*) | Sí | Número de RUC o cédula de identidad del cliente a consultar. | `1234` |
 
 ---

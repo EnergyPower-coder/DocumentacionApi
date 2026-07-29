@@ -8,9 +8,7 @@ Obtiene una lista paginada de artículos que sean Equipos, son datos del inventa
 
 Uses **Basic Authentication**:
 
-- **Username:**
-    
-- **Password:**
+ El acceso esta en el archivo **API CLAVE 2**
 
 ---
 

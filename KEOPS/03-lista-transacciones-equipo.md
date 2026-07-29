@@ -2,10 +2,18 @@
 
 Obtiene una lista paginada de transacciones de ventas asociadas a un equipo específico (*equipo*). Cada registro incluye la fecha de la transacción, el artículo vendido, la cantidad, el precio de venta, la ubicación y el inventario restante disponible (*stock*).
 
-### Endpoint
+## Endpoint
 
 `GET http://api.energy.keops-corp.com/Transactions_equipo/`
 
+---
+
+###  Authentication
+
+Uses **Basic Authentication**:
+
+ El acceso esta en el archivo **API CLAVE 2**
+ 
 ---
 
 ## Parámetros de Consulta (Query Params)

@@ -17,7 +17,7 @@ Busca y recupera una lista de productos en el sistema KEOPS que coincidan con un
 | Parámetro | Tipo | Requerido | Descripción | Ejemplo |
 | --- | --- | --- | --- | --- |
 | `codemp` | texto (*string*) | Sí | Código identificador de la empresa. | `01` |
-| `clave` | texto (*string*) | Sí | Clave de acceso / token de autenticación para la API. | `CLAVE` |
+| `clave` | texto (*string*) | Sí | Clave de acceso ubicado en el archivo **API CLAVE 1**. | `CLAVE` |
 | `codart` | texto (*string*) | Sí | Código de artículo o número de parte a buscar. | `4520-05` |
 
 ---

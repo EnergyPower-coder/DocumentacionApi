@@ -66,6 +66,16 @@ const colecciones = [
             metodo: "GET",
             archivo: "KEOPS/06-ventas-EP.md",
           },
+          {
+            titulo: "Pendientes despacho equipo",
+            metodo: "GET",
+            archivo: "KEOPS/14-pendientes-despacho-equipo.md",
+          },
+          {
+            titulo: "Pendientes despacho",
+            metodo: "GET",
+            archivo: "KEOPS/14-pendientes-despacho.md",
+          }
         ],
       },
       {

@@ -8,9 +8,7 @@ Obtiene una lista paginada de artículos de inventario desde el sistema Streamli
 
 Uses **Basic Authentication**:
 
-- **Username:**
-    
-- **Password:**
+ El acceso esta en el archivo **API CLAVE 2**
 
 ---
 

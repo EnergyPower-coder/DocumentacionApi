@@ -2,10 +2,18 @@
 
 Obtiene una lista paginada de transacciones de ventas desde la API de Streamline.
 
-### Endpoint
+## Endpoint
 
 `GET http://api.energy.keops-corp.com/transactions/`
 
+---
+
+###  Authentication
+
+Uses **Basic Authentication**:
+
+ El acceso esta en el archivo **API CLAVE 2**
+ 
 ---
 
 ### Parámetros de Consulta (Query Params)

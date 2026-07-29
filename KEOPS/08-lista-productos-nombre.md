@@ -17,7 +17,7 @@ Busca y recupera una lista de productos en el sistema KEOPS que coincidan parcia
 | Parámetro | Tipo | Requerido | Descripción | Ejemplo |
 | --- | --- | --- | --- | --- |
 | `codemp` | texto (*string*) | Sí | Código identificador de la empresa. | `01` |
-| `nomart` | texto (*string*) | Sí | Nombre o coincidencia del artículo a buscar. | `FILTRO DE ACEITE BY PASS` |
+| `nomart` | texto (*string*) | Sí | Clave de acceso ubicado en el archivo **API CLAVE 1**. | `FILTRO DE ACEITE BY PASS` |
 | `clave` | texto (*string*) | Sí | Clave de acceso / token de autenticación para la API. | `1234` |
 
 ---

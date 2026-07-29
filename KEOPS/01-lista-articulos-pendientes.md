@@ -5,11 +5,9 @@ Obtiene la lista de artículos pendientes de recibir, basándose en las órdenes
 ---
 ###  Authentication
 
-Uses **Basic Authentication**:
+Usa **Basic Authentication**:
 
-- **Username:**
-    
-- **Password:**
+ El acceso esta en el archivo **API CLAVE 2**
 
 ---
 

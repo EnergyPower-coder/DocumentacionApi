@@ -17,7 +17,7 @@ Consulta y recupera el listado de egresos, guías/notas de entrega y despachos d
 | Parámetro | Tipo | Requerido | Descripción | Ejemplo |
 | --- | --- | --- | --- | --- |
 | `codemp` | texto (*string*) | Sí | Código identificador de la empresa. | `01` |
-| `clave` | texto (*string*) | Sí | Clave de acceso / token de autenticación para la API. | `123` |
+| `clave` | texto (*string*) | Sí | Clave de acceso ubicado en el archivo **API CLAVE 1**. | `123` |
 | `identificacion` | texto (*string*) | Sí | Número de RUC o cédula del cliente a consultar. | `1234567` |
 
 ---

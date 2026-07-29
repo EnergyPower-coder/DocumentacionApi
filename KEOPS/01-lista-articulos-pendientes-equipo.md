@@ -5,11 +5,9 @@ Obtiene los registros **"toReceive"** (artículos pendientes de recepción) para
 ---
 ###  Authentication
 
-Uses **Basic Authentication**:
+Usa **Basic Authentication**:
 
-- **Username:**
-    
-- **Password:**
+ El acceso esta en el archivo **API CLAVE 2**
 
 ---
 

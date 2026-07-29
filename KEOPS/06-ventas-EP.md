@@ -17,7 +17,7 @@ Obtiene el detalle general de las ventas e ítems facturados (repuestos, equipos
 | Parámetro | Tipo | Requerido | Descripción | Ejemplo |
 | --- | --- | --- | --- | --- |
 | `codemp` | texto (*string*) | Sí | Código identificador de la empresa. | `01` |
-| `clave` | texto (*string*) | Sí | Clave de acceso / token de autenticación para la API. | `123` |
+| `clave` | texto (*string*) | Sí | Clave de acceso a la API ubicado en el archivo **API CLAVE 4**. | `123` |
 | `fecini` | texto (*string*) | Sí | Fecha inicial del rango de consulta (`AAAA-MM-DD`). | `2025-03-31` |
 | `fecfin` | texto (*string*) | Sí | Fecha final del rango de consulta (`AAAA-MM-DD`). | `2025-03-31` |
 

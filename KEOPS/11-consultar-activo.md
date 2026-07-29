@@ -17,7 +17,7 @@ Consulta y recupera el listado de activos (motores y generadores) despachados a 
 | Parámetro | Tipo | Requerido | Descripción | Ejemplo |
 | --- | --- | --- | --- | --- |
 | `codemp` | texto (*string*) | Sí | Código identificador de la empresa. | `01` |
-| `clave` | texto (*string*) | Sí | Clave de acceso / token de autenticación para la API. | `clave` |
+| `clave` | texto (*string*) | Sí | Clave de acceso ubicado en el archivo **API CLAVE 1**. | `clave` |
 | `identificacion` | texto (*string*) | Sí | Número de RUC o cédula del cliente a consultar. | `1234567` |
 
 ---

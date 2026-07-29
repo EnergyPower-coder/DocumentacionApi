@@ -17,7 +17,7 @@ Obtiene los registros contables de gastos de viaje y viáticos desde el sistema 
 | Parámetro | Tipo | Requerido | Descripción |
 | --- | --- | --- | --- |
 | `codemp` | texto (*string*) | Sí | Código de la empresa (ej. `01`). |
-| `clave` | texto (*string*) | Sí | Clave de acceso / token de autenticación para la API. |
+| `clave` | texto (*string*) | Sí | Clave de acceso ubicado en el archivo **CLAVE API 3** |
 | `fecini` | texto (*string*) | Sí | Fecha inicial del rango de consulta en formato `AAAA-MM-DD`. |
 | `fecfin` | texto (*string*) | Sí | Fecha final del rango de consulta en formato `AAAA-MM-DD`. |
 

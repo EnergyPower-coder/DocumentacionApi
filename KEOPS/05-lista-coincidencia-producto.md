@@ -6,13 +6,14 @@ Obtiene una lista de productos del sistema KEOPS que coinciden con un término d
 
 `GET http://api.energy.keops-corp.com/listacoincidenciaproducto/`
 
+
 ---
 
 ### Parámetros de Consulta (Query Params)
 
 | Parámetro    | Tipo             | Requerido | Descripción                                                                                                                                  |
 | ------------ | ---------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `parametros` | texto (_string_) | Sí        | Objeto codificado en formato URL-encoded, Base64 y serializado en PHP que contiene los parámetros de búsqueda (ver Script de Pre-solicitud). |
+| `parametros` | texto (_string_) | Sí        | Objeto codificado en formato URL-encoded, Base64 y serializado en PHP que contiene los parámetros de búsqueda (ver Script de Pre-solicitud). Ubidado en el archivo **API CLAVE 5** |
 
 ---
 

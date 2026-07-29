@@ -17,7 +17,7 @@ Consulta y retorna los datos detallados de un único producto del sistema KEOPS 
 | Parámetro | Tipo | Requerido | Descripción | Ejemplo |
 | --- | --- | --- | --- | --- |
 | `codemp` | texto (*string*) | Sí | Código identificador de la empresa. | `01` |
-| `clave` | texto (*string*) | Sí | Clave de acceso / token de autenticación para la API. | `clave` |
+| `clave` | texto (*string*) | Sí | Clave de acceso ubicado en el archivo **API CLAVE 1**. | `clave` |
 | `codart` | texto (*string*) | Sí | Código exacto del artículo a consultar. | `4590657` |
 
 ---

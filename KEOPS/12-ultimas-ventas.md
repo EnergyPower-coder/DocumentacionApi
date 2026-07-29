@@ -17,7 +17,7 @@ Consulta y consolida el historial de facturación de un cliente (por RUC) corres
 | Parámetro | Tipo | Requerido | Descripción | Ejemplo |
 | --- | --- | --- | --- | --- |
 | `codemp` | texto (*string*) | Sí | Código identificador de la empresa. | `01` |
-| `clave` | texto (*string*) | Sí | Clave de acceso / token de autenticación para la API. | `clave` |
+| `clave` | texto (*string*) | Sí | Clave de acceso ubicado en el archivo **API CLAVE 1**. | `clave` |
 | `identificacion` | texto (*string*) | Sí | Número de RUC o identificación del cliente. | `1234567` |
 | `fecha_corte` | texto (*string*) | Sí | Fecha de corte para calcular el período de 12 meses atrás (`AAAA-MM-DD`). | `2026-02-01` |
 

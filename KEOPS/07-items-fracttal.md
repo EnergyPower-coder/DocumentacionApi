@@ -16,6 +16,7 @@ Obtiene el inventario general de artículos e insumos estructurado para la integ
 
 Este endpoint requiere **Autenticación Básica** (*Basic Auth*)
 
+Ubicado en el archivo **API CLAVE 6**
 
 ---
 
