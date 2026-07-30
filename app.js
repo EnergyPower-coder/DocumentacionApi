@@ -75,13 +75,12 @@ const colecciones = [
             titulo: "Pendientes despacho",
             metodo: "GET",
             archivo: "KEOPS/14-pendientes-despacho.md",
-          }
+          },
         ],
       },
       {
         nombreSubcarpeta: "Módulo AURA",
         endpoints: [
-          
           {
             titulo: "Lista de productos por nombre",
             metodo: "GET",
@@ -124,6 +123,46 @@ const colecciones = [
           },
         ],
       },
+    ],
+  },
+  {
+    nombreProyecto: "DECISION",
+    subcarpetas: [
+      {
+        nombreSubcarpeta: "ORDENES TRABAJO",
+        endpoints: [
+          {
+            titulo: "Cerrar Oportunidad",
+            metodo: "POST",
+            archivo: "DECISION/01-cierre-oportunidad.md",
+          },
+          {
+            titulo: "Consultar Oportunidad",
+            metodo: "GET",
+            archivo: "DECISION/02-consultar-oportunidad.md",
+          },
+          {
+            titulo: "Consultar Contacto",
+            metodo: "GET",
+            archivo: "DECISION/03-consulta-contacto.md",
+          },
+          {
+            titulo: "Creación Contacto",
+            metodo: "POST",
+            archivo: "DECISION/04-creacion-contacto.md",
+          },
+          {
+            titulo: "Edición Contacto",
+            metodo: "PUT",
+            archivo: "DECISION/04-edicion-contacto.md",
+          },
+          {
+            titulo: "Consultar oportunidades",
+            metodo: "GET",
+            archivo: "DECISION/01-consulta-oportunidades.md",
+          }
+        ],
+      }
     ],
   },
 ];
