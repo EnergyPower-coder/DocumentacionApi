@@ -46,7 +46,7 @@ Retorna un objeto JSON con la confirmación de la solicitud y un objeto `datos` 
 | `direccion` | texto (*string*) | Dirección domiciliaria o fiscal del cliente. |
 | `correo_electronico` | texto (*string*) | Correo electrónico registrado para notificaciones/facturación. |
 | `cliente_desde` | texto (*string*) | Fecha desde la cual está registrado como cliente en el sistema. |
-| `identificacion_vendedor` | texto (*string*) | Identificador o nombre del vendedor asignado al cliente. |
+| `identificacion_vendedor` | texto (*string*) | Identificador del vendedor CEDULA O RUC |
 
 ---
 
