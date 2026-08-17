@@ -36,6 +36,64 @@ const colecciones = [
             metodo: "GET",
             archivo: "KEOPS/07-items-fracttal.md",
           },
+          {
+            titulo: "Consulta Producto Cifrado",
+            metodo: "GET",
+            archivo: "KEOPS/15-consulta-producto-cifrado",
+          },
+          {
+            titulo: "Consulta alterno Cifrado",
+            metodo: "GET",
+            archivo: "KEOPS/16-consulta-alterno-cifrado.md",
+          }
+          ,
+          {
+            titulo: "Lista ordenes de producto",
+            metodo: "GET",
+            archivo: "KEOPS/17-lista-ordenes-producto.md",
+          }
+          ,
+          {
+            titulo: "Guias de remision",
+            metodo: "GET",
+            archivo: "KEOPS/18-guias-remision.md",
+          }
+          ,
+          {
+            titulo: "Consutla de factura",
+            metodo: "GET",
+            archivo: "KEOPS/19-Consulta-factura",
+          }
+          ,
+          {
+            titulo: "Consutlar equipo",
+            metodo: "GET",
+            archivo: "KEOPS/20-Consultar-equipo",
+          }
+          ,
+          {
+            titulo: "Consutlar contacto",
+            metodo: "GET",
+            archivo: "KEOPS/21-consulta-contacto",
+          }
+          ,
+          {
+            titulo: "Vencido por vendedor",
+            metodo: "GET",
+            archivo: "KEOPS/22-vencido-por-vendedor",
+          }
+          ,
+          {
+            titulo: "Vencido por vendedor por cliente",
+            metodo: "GET",
+            archivo: "KEOPS/23-vencido-por-vendedor-por-cliente",
+          }
+          ,
+          {
+            titulo: "Vencido por factura",
+            metodo: "GET",
+            archivo: "KEOPS/24-vencido-por-factura",
+          }
         ],
       },
       {

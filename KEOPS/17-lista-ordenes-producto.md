@@ -1,0 +1,58 @@
+# Documentación de la API Keops
+
+## 1. Consulta de Producto (Keops)
+
+Obtiene la información de un producto desde el sistema ERP Keops mediante el código de artículo y el código de empresa.
+
+**Endpoint:** `GET http://api.energy.keops-corp.com/consultaproducto/`
+
+---
+
+### Cómo funciona
+
+Antes de enviar la solicitud, un script de pre-solicitud (pre-request script) construye y codifica automáticamente el parámetro de consulta `parametros` mediante los siguientes pasos:
+
+1. Construye una cadena serializada en PHP a partir de un objeto que contiene `codemp`, `codart` y `clave`.
+2. Codifica la cadena serializada a Base64.
+3. Aplica codificación URL (URL-encode) a la cadena en Base64.
+4. Almacena el resultado en la variable de entorno `{{parametros}}`, la cual se envía como parámetro en la consulta.
+
+---
+
+### Parámetros de consulta (Query Parameters)
+
+| Parámetro | Tipo | Descripción |
+| --- | --- | --- |
+| `parametros` | string | Cadena en Base64 con codificación URL de un objeto serializado en PHP. Se genera automáticamente mediante el script de pre-solicitud. |
+
+---
+
+### Campos del objeto serializado
+
+| Campo | Descripción | Ejemplo |
+| --- | --- | --- |
+| `codemp` | Código de empresa en el sistema Keops | `01` |
+| `codart` | Código de artículo/producto a consultar | `4590657` |
+| `clave` | Clave de autenticación para la API de Keops | `ubicado en API CLAVE 5` |
+
+---
+
+### Ejemplo de respuesta
+
+```json
+{
+  "metodo": "consultaproducto",
+  "respuesta": 200,
+  "descripcion": "La consulta fue correcta.",
+  "datos": {
+    "nombre": "BANDA BOMBA DE AGUA ",
+    "marca": "REPUESTOS PERKINS GS",
+    "modelo": "BANDAS",
+    "costo": "59.0900000000000119",
+    "precio": "88.86",
+    "descuento": ".1",
+    "existencia": "0",
+    "proveedor": "SERVICIOS INDUSTRIALES VALLEJO ARAUJO S.A. ",
+    "estado": ""
+  }
+}
