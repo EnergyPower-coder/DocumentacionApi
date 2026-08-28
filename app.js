@@ -62,37 +62,43 @@ const colecciones = [
           {
             titulo: "Consutla de factura",
             metodo: "GET",
-            archivo: "KEOPS/19-Consulta-factura",
+            archivo: "KEOPS/19-Consulta-factura.md",
           }
           ,
           {
             titulo: "Consutlar equipo",
             metodo: "GET",
-            archivo: "KEOPS/20-Consultar-equipo",
+            archivo: "KEOPS/20-Consultar-equipo.md",
           }
           ,
           {
             titulo: "Consutlar contacto",
             metodo: "GET",
-            archivo: "KEOPS/21-consulta-contacto",
+            archivo: "KEOPS/21-consulta-contacto.md",
           }
           ,
           {
             titulo: "Vencido por vendedor",
             metodo: "GET",
-            archivo: "KEOPS/22-vencido-por-vendedor",
+            archivo: "KEOPS/22-vencido-por-vendedor.md",
           }
           ,
           {
             titulo: "Vencido por vendedor por cliente",
             metodo: "GET",
-            archivo: "KEOPS/23-vencido-por-vendedor-por-cliente",
+            archivo: "KEOPS/23-vencido-por-vendedor-por-cliente.md",
           }
           ,
           {
             titulo: "Vencido por factura",
             metodo: "GET",
-            archivo: "KEOPS/24-vencido-por-factura",
+            archivo: "KEOPS/24-vencido-por-factura.md",
+          }
+          ,
+          {
+            titulo: "Lista de todo los pendientes por facturar",
+            metodo: "GET",
+            archivo: "KEOPS/25-lista-todo-pendientes-facturar.md",
           }
         ],
       },
