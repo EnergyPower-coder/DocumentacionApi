@@ -100,6 +100,12 @@ const colecciones = [
             metodo: "GET",
             archivo: "KEOPS/25-lista-todo-pendientes-facturar.md",
           }
+          ,
+          {
+            titulo: "Notas de crédito y Débito",
+            metodo: "GET",
+            archivo: "KEOPS/26-Notas-credito-debito.md",
+          }
         ],
       },
       {
