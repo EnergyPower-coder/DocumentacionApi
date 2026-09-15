@@ -45,67 +45,57 @@ const colecciones = [
             titulo: "Consulta alterno Cifrado",
             metodo: "GET",
             archivo: "KEOPS/16-consulta-alterno-cifrado.md",
-          }
-          ,
+          },
           {
             titulo: "Lista ordenes de producto",
             metodo: "GET",
             archivo: "KEOPS/17-lista-ordenes-producto.md",
-          }
-          ,
+          },
           {
             titulo: "Guias de remision",
             metodo: "GET",
             archivo: "KEOPS/18-guias-remision.md",
-          }
-          ,
+          },
           {
             titulo: "Consutla de factura",
             metodo: "GET",
             archivo: "KEOPS/19-Consulta-factura.md",
-          }
-          ,
+          },
           {
             titulo: "Consutlar equipo",
             metodo: "GET",
             archivo: "KEOPS/20-Consultar-equipo.md",
-          }
-          ,
+          },
           {
             titulo: "Consutlar contacto",
             metodo: "GET",
             archivo: "KEOPS/21-consulta-contacto.md",
-          }
-          ,
+          },
           {
             titulo: "Vencido por vendedor",
             metodo: "GET",
             archivo: "KEOPS/22-vencido-por-vendedor.md",
-          }
-          ,
+          },
           {
             titulo: "Vencido por vendedor por cliente",
             metodo: "GET",
             archivo: "KEOPS/23-vencido-por-vendedor-por-cliente.md",
-          }
-          ,
+          },
           {
             titulo: "Vencido por factura",
             metodo: "GET",
             archivo: "KEOPS/24-vencido-por-factura.md",
-          }
-          ,
+          },
           {
             titulo: "Lista de todo los pendientes por facturar",
             metodo: "GET",
             archivo: "KEOPS/25-lista-todo-pendientes-facturar.md",
-          }
-          ,
+          },
           {
             titulo: "Notas de crédito y Débito",
             metodo: "GET",
             archivo: "KEOPS/26-Notas-credito-debito.md",
-          }
+          },
         ],
       },
       {
@@ -199,7 +189,7 @@ const colecciones = [
     nombreProyecto: "DECISION",
     subcarpetas: [
       {
-        nombreSubcarpeta: "ORDENES TRABAJO",
+        nombreSubcarpeta: "API V1",
         endpoints: [
           {
             titulo: "Cerrar Oportunidad",
@@ -230,9 +220,55 @@ const colecciones = [
             titulo: "Consultar oportunidades",
             metodo: "GET",
             archivo: "DECISION/01-consulta-oportunidades.md",
+          },
+        ],
+      },
+      {
+        nombreSubcarpeta: "API V2",
+        endpoints: [
+          {
+            titulo: "Consultar empresas",
+            metodo: "GET",
+            archivo: "DECISION/APIV2/01-consultar-empresa.md",
+          },
+          {
+            titulo: "Crear contacto",
+            metodo: "POST",
+            archivo: "DECISION/APIV2/02-crear-contacto.md",
+          }
+          ,
+          {
+            titulo: "Editar contacto",
+            metodo: "PUT",
+            archivo: "DECISION/APIV2/03-editar-contacto.md",
+          },
+          {
+            titulo: "Consultar contactos de una empresa",
+            metodo: "GET",
+            archivo: "DECISION/APIV2/04-consultar-contacto-empresa.md",
+          },
+          {
+            titulo: "Consultar tareas de seguimiento",
+            metodo: "GET",
+            archivo: "DECISION/APIV2/05-consultar-taresa-seguimiento.md",
+          },
+          {
+            titulo: "Cerrar oportunidad",
+            metodo: "POST",
+            archivo: "DECISION/APIV2/06-cerrar-oportunidad.md",
+          },
+          {
+            titulo: "Bloquear ofertas de portunidad",
+            metodo: "PUT",
+            archivo: "DECISION/APIV2/07-bloquear-oferta-oportunidad.md",
+          },
+          {
+            titulo: "Consultar oportunidad",
+            metodo: "GET",
+            archivo: "DECISION/APIV2/08-colsultar-oportunidad.md",
           }
         ],
-      }
+      },
     ],
   },
 ];
