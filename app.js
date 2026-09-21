@@ -136,6 +136,21 @@ const colecciones = [
             metodo: "GET",
             archivo: "KEOPS/14-pendientes-despacho.md",
           },
+          {
+            titulo: "Lista cierre negociación detallado",
+            metodo: "GET",
+            archivo: "KEOPS/27-lista-cierre-negociacion-detallado.md",
+          },
+          {
+            titulo: "Lista cierre negociación costo",
+            metodo: "GET",
+            archivo: "KEOPS/28-lista-cierre-negociacion-costo.md",
+          },
+          {
+            titulo: "Lista cierre negociación forma pago",
+            metodo: "GET",
+            archivo: "KEOPS/29-lista-cierre-negociacion-forma-pago.md",
+          }
         ],
       },
       {
